@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — Capital Coffee</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+<div class="header">
+    <a href="index.html" class="logo">
+        CAPITAL
+        <span>COFFEE</span>
+    </a>
+
+    <nav class="navigation">
+        <a href="index.html#home">Главная</a>
+        <a href="index.html#menu">Меню</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-icons">
+        <a href="izb.html">♡</a>
+        <a href="kor.html">🛒</a>
+    </div>
+</div>
+
+<section class="menu-section">
+    <div class="menu-heading">
+        <div>
+            <p class="section-label">КОРЗИНА</p>
+            <h2>Ваш заказ</h2>
+        </div>
+    </div>
+    <div class="products" id="list"></div>
+    <h3 id="total" class="total"></h3>
+</section>
+
+<script src="final.js"></script>
+<script>
+    var list = document.getElementById("list");
+
+    function showCart() {
+        var cart = getList("cart");
+        var total = 0;
+        list.innerHTML = "";
+
+        if (cart.length == 0) {
+            list.innerHTML = "<p class='empty'>Корзина пуста</p>";
+            document.getElementById("total").textContent = "";
+            return;
+        }
+
+        for (var i = 0; i < cart.length; i++) {
+            var p = cart[i];
+            total = total + p.price * p.qty;
+
+            list.innerHTML = list.innerHTML + `
+                <article class="product-card">
+                    <div class="product-image"><img src="${p.img}" alt="${p.name}"></div>
+                    <div class="product-info">
+                        <h3>${p.name}</h3>
+                        <div class="product-bottom">
+                            <strong>${p.price} ₸ × ${p.qty}</strong>
+                            <div class="product-buttons">
+                                <button class="remove" data-id="${p.id}">×</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>`;
+        }
+
+        document.getElementById("total").textContent = "Итого: " + total + " ₸";
+    }
+
+    // удаление товара по кнопке ×
+    list.addEventListener("click", function (event) {
+        var btn = event.target.closest(".remove");
+        if (btn == null) {
+            return;
+        }
+
+        var cart = getList("cart");
+        var newCart = [];
+        for (var i = 0; i < cart.length; i++) {
+            if (cart[i].id != btn.dataset.id) {
+                newCart.push(cart[i]);
+            }
+        }
+        saveList("cart", newCart);
+        showCart();
+    });
+
+    showCart();
+</script>
+</body>
+</html>

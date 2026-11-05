@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Coffee</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+<div class="header">
+    <a href="final.html" class="logo">
+        CAPITAL
+        <span>COFFEE</span>
+    </a>
+
+    <nav class="navigation">
+        <a href="index.html#home" class="active">Главная</a>
+        <a href="index.html#menu">Меню</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-icons">
+        <a href="izb.html">♡</a>
+        <a href="kor.html">🛒</a>
+    </div>
+</div>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="small-title">CAPITAL COFFEE</p>
+
+        <h1>More than<br>coffee.</h1>
+
+        <p class="hero-text">
+            Кофе, который задаёт<br>
+            настроение вашему дню.
+        </p>
+
+        <div>
+            <a href="#menu" class="main-button">ПОСМОТРЕТЬ МЕНЮ →</a>
+        </div>
+
+        <div class="statistics">
+            <div><strong>15+</strong><span>напитков</span></div>
+            <div><strong>10+</strong><span>блюд</span></div>
+            <div><strong>100%</strong><span>любовь к кофе</span></div>
+        </div>
+    </div>
+
+    <img class="hero-image"
+         src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80"
+         alt="Coffee cup">
+</section>
+
+<section class="menu-section" id="menu">
+
+    <div class="menu-heading">
+        <div>
+            <p class="section-label">МЕНЮ</p>
+            <h2>Вкус в каждой<br>детали</h2>
+        </div>
+
+        <div class="categories">
+            <a href="#menu" data-category="coffee" class="selected">Кофе</a>
+            <a href="#menu" data-category="breakfast">Завтраки</a>
+            <a href="#menu" data-category="bowls">Боулы</a>
+            <a href="#menu" data-category="salads">Салаты</a>
+            <a href="#menu" data-category="snacks">Закуски</a>
+            <a href="#menu" data-category="desserts">Десерты</a>
+        </div>
+    </div>
+
+    <div class="products">
+        <article class="product-card"
+                 data-id="5"
+                 data-category="coffee"
+                 data-name="Latte"
+                 data-price="1500"
+                 data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Latte">
+            </div>
+            <div class="product-info">
+                <h3>Latte</h3>
+                <p>Эспрессо и нежное молоко.</p>
+                <div class="nutrition">
+                    <span>К <b>120</b> ккал</span>
+                    <span>Б <b>6</b> г</span>
+                    <span>Ж <b>5</b> г</span>
+                    <span>У <b>12</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>1 500 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="6"
+                 data-category="coffee"
+                 data-name="Cappuccino"
+                 data-price="1400"
+                 data-img="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="Cappuccino">
+            </div>
+            <div class="product-info">
+                <h3>Cappuccino</h3>
+                <p>Эспрессо, молоко, плотная пенка.</p>
+                <div class="nutrition">
+                    <span>К <b>110</b> ккал</span>
+                    <span>Б <b>6</b> г</span>
+                    <span>Ж <b>5</b> г</span>
+                    <span>У <b>10</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>1 400 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="7"
+                 data-category="coffee"
+                 data-name="Iced Caramel Latte"
+                 data-price="1800"
+                 data-img="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="Iced Caramel Latte">
+            </div>
+            <div class="product-info">
+                <h3>Iced Caramel Latte</h3>
+                <p>Холодный латте с карамелью.</p>
+                <div class="nutrition">
+                    <span>К <b>190</b> ккал</span>
+                    <span>Б <b>5</b> г</span>
+                    <span>Ж <b>6</b> г</span>
+                    <span>У <b>28</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>1 800 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="8"
+                 data-category="coffee"
+                 data-name="Flat White"
+                 data-price="1600"
+                 data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" alt="Flat White">
+            </div>
+            <div class="product-info">
+                <h3>Flat White</h3>
+                <p>Двойной эспрессо и молоко.</p>
+                <div class="nutrition">
+                    <span>К <b>130</b> ккал</span>
+                    <span>Б <b>7</b> г</span>
+                    <span>Ж <b>6</b> г</span>
+                    <span>У <b>11</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>1 600 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="9"
+                 data-category="breakfast"
+                 data-name="Яйца бенедикт"
+                 data-price="2800"
+                 data-img="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=700&q=80" alt="Яйца бенедикт">
+            </div>
+            <div class="product-info">
+                <h3>Яйца бенедикт</h3>
+                <p>Яйцо пашот, булочка, соус.</p>
+                <div class="nutrition">
+                    <span>К <b>420</b> ккал</span>
+                    <span>Б <b>18</b> г</span>
+                    <span>Ж <b>26</b> г</span>
+                    <span>У <b>28</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 800 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="10"
+                 data-category="breakfast"
+                 data-name="Панкейки"
+                 data-price="2400"
+                 data-img="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=80" alt="Панкейки">
+            </div>
+            <div class="product-info">
+                <h3>Панкейки</h3>
+                <p>Пышные панкейки с ягодами.</p>
+                <div class="nutrition">
+                    <span>К <b>390</b> ккал</span>
+                    <span>Б <b>9</b> г</span>
+                    <span>Ж <b>12</b> г</span>
+                    <span>У <b>60</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 400 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="11"
+                 data-category="breakfast"
+                 data-name="Тост с авокадо"
+                 data-price="2300"
+                 data-img="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=700&q=80" alt="Тост с авокадо">
+            </div>
+            <div class="product-info">
+                <h3>Тост с авокадо</h3>
+                <p>Хлеб, авокадо, яйцо, зелень.</p>
+                <div class="nutrition">
+                    <span>К <b>350</b> ккал</span>
+                    <span>Б <b>12</b> г</span>
+                    <span>Ж <b>20</b> г</span>
+                    <span>У <b>30</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 300 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="2"
+                 data-category="bowls"
+                 data-name="Avocado Bowl"
+                 data-price="2900"
+                 data-img="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Avocado Bowl">
+            </div>
+            <div class="product-info">
+                <h3>Avocado Bowl</h3>
+                <p>Авокадо, яйцо, киноа, свежие овощи, зелень.</p>
+                <div class="nutrition">
+                    <span>К <b>420</b> ккал</span>
+                    <span>Б <b>15</b> г</span>
+                    <span>Ж <b>22</b> г</span>
+                    <span>У <b>38</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 900 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="3"
+                 data-category="bowls"
+                 data-name="Salmon Bowl"
+                 data-price="3900"
+                 data-img="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Salmon Bowl">
+            </div>
+            <div class="product-info">
+                <h3>Salmon Bowl</h3>
+                <p>Лосось, рис, авокадо, огурец, кунжут.</p>
+                <div class="nutrition">
+                    <span>К <b>510</b> ккал</span>
+                    <span>Б <b>29</b> г</span>
+                    <span>Ж <b>24</b> г</span>
+                    <span>У <b>43</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>3 900 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="1"
+                 data-category="salads"
+                 data-name="Chicken Caesar"
+                 data-price="3200"
+                 data-img="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=700&q=80" alt="Chicken Caesar">
+            </div>
+            <div class="product-info">
+                <h3>Chicken Caesar</h3>
+                <p>Курица, салат ромэн, томаты, пармезан, соус.</p>
+                <div class="nutrition">
+                    <span>К <b>480</b> ккал</span>
+                    <span>Б <b>32</b> г</span>
+                    <span>Ж <b>28</b> г</span>
+                    <span>У <b>21</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>3 200 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="4"
+                 data-category="salads"
+                 data-name="Greek Salad"
+                 data-price="2700"
+                 data-img="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=80" alt="Greek Salad">
+            </div>
+            <div class="product-info">
+                <h3>Greek Salad</h3>
+                <p>Огурцы, томаты, фета, красный лук, оливки.</p>
+                <div class="nutrition">
+                    <span>К <b>330</b> ккал</span>
+                    <span>Б <b>12</b> г</span>
+                    <span>Ж <b>26</b> г</span>
+                    <span>У <b>16</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 700 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="12"
+                 data-category="snacks"
+                 data-name="Картофель фри"
+                 data-price="1500"
+                 data-img="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Картофель фри">
+            </div>
+            <div class="product-info">
+                <h3>Картофель фри</h3>
+                <p>Хрустящий картофель с соусом.</p>
+                <div class="nutrition">
+                    <span>К <b>320</b> ккал</span>
+                    <span>Б <b>4</b> г</span>
+                    <span>Ж <b>15</b> г</span>
+                    <span>У <b>42</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>1 500 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="13"
+                 data-category="snacks"
+                 data-name="Мини-пицца"
+                 data-price="2600"
+                 data-img="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="Мини-пицца">
+            </div>
+            <div class="product-info">
+                <h3>Мини-пицца</h3>
+                <p>Томаты, моцарелла, базилик.</p>
+                <div class="nutrition">
+                    <span>К <b>450</b> ккал</span>
+                    <span>Б <b>16</b> г</span>
+                    <span>Ж <b>18</b> г</span>
+                    <span>У <b>52</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 600 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card"
+                 data-id="14"
+                 data-category="snacks"
+                 data-name="Сэндвич"
+                 data-price="2500"
+                 data-img="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=700&q=80" alt="Сэндвич">
+            </div>
+            <div class="product-info">
+                <h3>Сэндвич</h3>
+                <p>Курица, сыр, свежие овощи.</p>
+                <div class="nutrition">
+                    <span>К <b>380</b> ккал</span>
+                    <span>Б <b>20</b> г</span>
+                    <span>Ж <b>14</b> г</span>
+                    <span>У <b>40</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 500 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="product-card"
+                 data-id="15"
+                 data-category="desserts"
+                 data-name="Чизкейк"
+                 data-price="2200"
+                 data-img="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Чизкейк">
+            </div>
+            <div class="product-info">
+                <h3>Чизкейк</h3>
+                <p>Классический, со сливочным кремом.</p>
+                <div class="nutrition">
+                    <span>К <b>410</b> ккал</span>
+                    <span>Б <b>7</b> г</span>
+                    <span>Ж <b>26</b> г</span>
+                    <span>У <b>38</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 200 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="16"
+                 data-category="desserts"
+                 data-name="Пончик"
+                 data-price="1200"
+                 data-img="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=700&q=80" alt="Пончик">
+            </div>
+            <div class="product-info">
+                <h3>Пончик</h3>
+                <p>Глазурь и посыпка.</p>
+                <div class="nutrition">
+                    <span>К <b>300</b> ккал</span>
+                    <span>Б <b>4</b> г</span>
+                    <span>Ж <b>14</b> г</span>
+                    <span>У <b>40</b> г</span>>
+                </div>
+                <div class="product-bottom">
+                    <strong>1 200 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card"
+                 data-id="17"
+                 data-category="desserts"
+                 data-name="Шоколадный торт"
+                 data-price="2400"
+                 data-img="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80" alt="Шоколадный торт">
+            </div>
+            <div class="product-info">
+                <h3>Шоколадный торт</h3>
+                <p>Шоколадный бисквит и крем.</p>
+                <div class="nutrition">
+                    <span>К <b>460</b> ккал</span>
+                    <span>Б <b>6</b> г</span>
+                    <span>Ж <b>24</b> г</span>
+                    <span>У <b>52</b> г</span>
+                </div>
+                <div class="product-bottom">
+                    <strong>2 400 ₸</strong>
+                    <div class="product-buttons">
+                        <button class="add-fav">♡</button>
+                        <button class="add-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="special">
+    <div class="special-image"></div>
+    <div class="special-content">
+        <p>CAPITAL SPECIAL</p>
+        <h2>Iced Caramel Latte<br>+ Croissant</h2>
+        <strong>2 500 ₸</strong>
+        <a href="#menu" class="special-button">ПОПРОБОВАТЬ</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-image"></div>
+    <div class="about-content">
+        <p class="section-label">О НАС</p>
+        <h2>A PLACE TO<br>SLOW DOWN</h2>
+        <p class="about-text">
+            Мы создали место, где можно начать утро
+            с хорошего кофе, встретиться с друзьями
+            или просто немного отдохнуть от ритма города.
+        </p>
+        <div class="features">
+            <div><span>☕</span><p>Уютная<br>атмосфера</p></div>
+            <div><span>♧</span><p>Свежие<br>ингредиенты</p></div>
+            <div><span>♡</span><p>Забота<br>о каждом госте</p></div>
+        </div>
+        <a href="#about" class="about-button">УЗНАТЬ БОЛЬШЕ</a>
+    </div>
+</section>
+
+<footer class="footer" id="contacts">
+    <div class="footer-logo">
+        CAPITAL
+        <span>COFFEE</span>
+    </div>
+
+    <div class="footer-links">
+        <a href="final.html#menu">Меню</a>
+        <a href="final.html#about">О нас</a>
+        <a href="final.html#contacts">Контакты</a>
+    </div>
+
+    <div class="footer-info">
+        <span>📍 г. Алматы</span>
+        <span>◷ 08:00 — 23:00</span>
+    </div>
+
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </div>
+
+    <p class="copyright">© 2026 Capital Coffee</p>
+</footer>
+
+<script src="final.js"></script>
+</body>
+</html>
